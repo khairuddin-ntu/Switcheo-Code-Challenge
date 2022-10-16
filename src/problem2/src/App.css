@@ -1,0 +1,54 @@
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    position: relative;
+    animation-name: form-appear;
+    animation-duration: 1s;
+}
+
+#logo {
+    color: white;
+    width: 5%;
+    height: 5%;
+}
+
+#form__action {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+#form__action--button {
+    padding: 3%;
+}
+
+#form__action--progress {
+    margin-bottom: 4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+.form__spacer {
+    margin-bottom: 15%;
+}
+
+@keyframes form-appear {
+    from {
+        top: 10vh;
+        opacity: 0;
+    }
+
+    to {
+        top: 0vh;
+        opacity: 1;
+    }
+}
